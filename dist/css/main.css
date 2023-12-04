@@ -11,6 +11,14 @@
     margin: 0 0  5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px); }
 
 * {
   box-sizing: #444; }
@@ -68,3 +76,10 @@ h1, h2, h3 {
       overflow: hidden; }
       h1 main#home h1, h2 main#home h1, h3 main#home h1 {
         margin-top: 20vh; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
