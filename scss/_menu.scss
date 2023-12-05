@@ -15,7 +15,7 @@
     @include easeOut;
   }
 
-  // Rotate Into X with Menu line-height-step
+  // Rotate Into X with Menu lines
   &.close {
     transform: rotate(180deg);
 
@@ -48,7 +48,6 @@
     visibility: visible;
     display: flex;
     justify-content: space-between;
-    gap: 10%;
   }
 
   &-branding {
@@ -62,14 +61,18 @@
     overflow: hidden;
   }
   &-nav {
-    background: light($primary-color, 3);
+    background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
       // Slide in from top
-      transform: translate3d (0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      width: 50%;
+      margin: 0px;
+      text-align: center;
+      padding-top: 200px;
     }
   }
   // Branding Side
@@ -93,13 +96,13 @@
     }
   }
   .nav-item {
-    //  transform: translate3d(600px, 0, 0);
+    // transform: translate3d(600px, 0, 0);
     @include easeOut;
 
     &.show {
       // Slide in from right
       transform: translate3d(0, 0, 0);
-      margin-left: 200px;
+      margin-left: 100px;
     }
 
     &.current > a {
@@ -115,7 +118,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

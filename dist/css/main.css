@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.3s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -29,8 +29,7 @@
   .menu.show {
     visibility: visible;
     display: flex;
-    justify-content: space-between;
-    gap: 10%; }
+    justify-content: space-between; }
   .menu-branding {
     display: flex;
     flex-flow: column wrap;
@@ -41,16 +40,20 @@
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
-    background: light(#444, 3);
+    background: #373737;
     list-style: none;
-    transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.3s ease-out; }
     .menu-nav.show {
-      transform: translate3d 0, 0, 0; }
+      transform: translate3d(0, 0, 0);
+      width: 50%;
+      margin: 0px;
+      text-align: center;
+      padding-top: 200px; }
   .menu-branding {
     background: #444;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -61,10 +64,10 @@
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0);
-      margin-left: 200px; }
+      margin-left: 100px; }
     .menu .nav-item.current > a {
       color: #eece1a; }
   .menu .nav-link {
@@ -74,9 +77,9 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color(#444);
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu .nav-link:hover {
       color: #eece1a; }
   .menu .nav-item:nth-child(1) {
@@ -148,7 +151,7 @@ main {
     main .icons a {
       display: inline-block;
       padding: 0.6rem;
-      transition: all 0.5s ease-out; }
+      transition: all 0.3s ease-out; }
       main .icons a:hover {
         color: #eece1a; }
   main#home {
