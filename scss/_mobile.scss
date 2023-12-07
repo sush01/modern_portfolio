@@ -52,7 +52,7 @@
       background-size: cover;
       width: 137px;
       height: 132px;
-      margin-top: 8px;
+      margin-top: 10px;
     }
   }
 
@@ -64,6 +64,9 @@
       "job2"
       "job3";
     grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -79,5 +82,8 @@
       margin-top: 1rem;
       font-size: 5rem;
     }
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
