@@ -68,8 +68,10 @@ main {
       margin-top: 20vh;
     }
   }
+
   .about-info {
     display: grid;
+    grid-gap: 30px;
     grid-template-areas:
       "bioimage bio bio"
       "job1 job2 job3";
@@ -86,7 +88,6 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
-    margin-left: 1.5rem;
   }
 
   .job-1 {

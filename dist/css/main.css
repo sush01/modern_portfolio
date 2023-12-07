@@ -160,6 +160,7 @@ main {
       margin-top: 20vh; }
   main .about-info {
     display: grid;
+    grid-gap: 30px;
     grid-template-areas: "bioimage bio bio" "job1 job2 job3";
     grid-template-columns: repeat(3, 1fr); }
   main .bio-image {
@@ -169,8 +170,7 @@ main {
     border: #eece1a 5px solid; }
   main .bio {
     grid-area: bio;
-    font-size: 1.5rem;
-    margin-left: 1.5rem; }
+    font-size: 1.5rem; }
   main .job-1 {
     grid-area: job1; }
   main .job-2 {
