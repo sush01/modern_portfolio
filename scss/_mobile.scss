@@ -17,6 +17,7 @@
   main {
     align-items: center;
     text-align: center;
+    font-size: 12px;
 
     .lg-heading {
       line-height: 1;
@@ -32,13 +33,14 @@
 
     &.show {
       transform: translate3d(0, 0, 0);
+      height: 100%;
     }
   }
 
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
+    font-size: 10px;
   }
 
   .menu-branding {
@@ -48,9 +50,20 @@
     .portrait {
       background: url(../img/sm_sush.jpg);
       background-size: cover;
-      width: 80px;
-      height: 140px;
+      width: 137px;
+      height: 132px;
+      margin-top: 8px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
   }
 }
 
